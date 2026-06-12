@@ -14,7 +14,7 @@ export class HomePage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.resultsTotal = this.page.locator('.sb-results-total');
+    this.resultsTotal = this.page.locator('.sb-results-total').first();
     this.addToCartLink = this.page.getByRole('link', { name: 'Lisa ostukorvi' });
     this.addToCartMessage = this.page.locator('.item-messagebox');
     this.cartCount = this.page.locator('.cart-products');

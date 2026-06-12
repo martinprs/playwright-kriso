@@ -10,7 +10,7 @@ export class BasePage {
     this.logo = this.page.locator('.logo-icon');
     this.consentButton = this.page.getByRole('button', { name: 'Nõustun' });
     this.searchInput = this.page.locator('#top-search-text');
-    this.searchButton = this.page.locator('#top-search-btn-wrap');
+    this.searchButton = this.page.getByRole('button', { name: 'Search' });
   }
 
   async acceptCookies() {
